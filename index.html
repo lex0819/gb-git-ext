@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 03</title>
+  </head>
+
+  <body>
+    <h1>Home task 03</h1>
+    <h2>from lesson</h2>
+    <button onclick="askName()">run simple script</button>
+    <br>
+    <hr>
+    <br>
+    <h2>with Form</h2>
+    <form action="" onsubmit="return false">
+      <input id="inputName" type="text" placeholder="Enter your name">
+      <button type="submit" onclick="writeName()">Ok</button>
+    </form>
+    <br>
+    <div id="showName"></div>
+    <script>
+
+      function askName() {
+        const name = prompt('Enter your name: ');
+        alert(name)
+      }
+
+      const showName = document.querySelector('#showName');
+      function writeName() {
+        const inputName = document.querySelector('#inputName').value;
+        showName.innerHTML = inputName ? `Your name is ${inputName}` : 'Enter your name!'
+      }
+    </script>
+  </body>
+
+</html>
