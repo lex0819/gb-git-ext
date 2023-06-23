@@ -18,16 +18,6 @@ drwxr-xr-x@ 11 lex  staff   352 Jun 17 18:14 web-technology
 ➜  web-technology git:(c-sharp) ✗ git commit -m'add c-sharp repo'
 [c-sharp 85cf40a] add c-sharp repo
  1 file changed, 6 insertions(+), 1 deletion(-)
-➜  web-technology git:(c-sharp) git push
-fatal: No configured push destination.
-Either specify the URL from the command-line or configure a remote repository using
-
-    git remote add <name> <url>
-
-and then push using the remote name
-
-    git push <name>
-
 ➜  web-technology git:(c-sharp) git remote -v
 c_sharp	git@github.com:lex0819/c_sharp_task_54_56_58_60_62.git (fetch)
 c_sharp	git@github.com:lex0819/c_sharp_task_54_56_58_60_62.git (push)
@@ -53,36 +43,6 @@ To github.com:lex0819/gb-git-ext.git
 Fetching repo01
 Fetching c_sharp
 ➜  web-technology git:(c-sharp)
-➜  web-technology git:(c-sharp) git pull
-There is no tracking information for the current branch.
-Please specify which branch you want to merge with.
-See git-pull(1) for details.
-
-    git pull <remote> <branch>
-
-If you wish to set tracking information for this branch you can do so with:
-
-    git branch --set-upstream-to=<remote>/<branch> c-sharp
-
-➜  web-technology git:(c-sharp)
-➜  web-technology git:(c-sharp) git branch --set-upstream-to=c-sharp/master c-sharp
-fatal: the requested upstream branch 'c-sharp/master' does not exist
-hint:
-hint: If you are planning on basing your work on an upstream
-hint: branch that already exists at the remote, you may need to
-hint: run "git fetch" to retrieve it.
-hint:
-hint: If you are planning to push out a new local branch that
-hint: will track its remote counterpart, you may want to use
-hint: "git push -u" to set the upstream config as you push.
-hint: Disable this message with "git config advice.setUpstreamFailure false"
-➜  web-technology git:(c-sharp)
-➜  web-technology git:(c-sharp) git pull rebase
-fatal: 'rebase' does not appear to be a git repository
-fatal: Could not read from remote repository.
-
-Please make sure you have the correct access rights
-and the repository exists.
 ➜  web-technology git:(c-sharp) git pull --rebase
 There is no tracking information for the current branch.
 Please specify which branch you want to rebase against.
@@ -94,12 +54,6 @@ If you wish to set tracking information for this branch you can do so with:
 
     git branch --set-upstream-to=<remote>/<branch> c-sharp
 
-➜  web-technology git:(c-sharp) git pull c-sharp master
-fatal: 'c-sharp' does not appear to be a git repository
-fatal: Could not read from remote repository.
-
-Please make sure you have the correct access rights
-and the repository exists.
 ➜  web-technology git:(c-sharp) git remote -v
 c_sharp	git@github.com:lex0819/c_sharp_task_54_56_58_60_62.git (fetch)
 c_sharp	git@github.com:lex0819/c_sharp_task_54_56_58_60_62.git (push)
@@ -121,17 +75,6 @@ hint: preference for all repositories. You can also pass --rebase, --no-rebase,
 hint: or --ff-only on the command line to override the configured default per
 hint: invocation.
 fatal: Need to specify how to reconcile divergent branches.
-➜  web-technology git:(c-sharp) git pull --rebase
-There is no tracking information for the current branch.
-Please specify which branch you want to rebase against.
-See git-pull(1) for details.
-
-    git pull <remote> <branch>
-
-If you wish to set tracking information for this branch you can do so with:
-
-    git branch --set-upstream-to=<remote>/<branch> c-sharp
-
 ➜  web-technology git:(c-sharp) git pull --rebase c_sharp master
 From github.com:lex0819/c_sharp_task_54_56_58_60_62
  * branch            master     -> FETCH_HEAD
@@ -201,16 +144,6 @@ no changes added to commit (use "git add" and/or "git commit -a")
  rename Program60.cs => seminar02/Program60.cs (100%)
  rename Program62.cs => seminar02/Program62.cs (100%)
 ➜  web-technology git:(c-sharp)
-➜  web-technology git:(c-sharp) git push
-fatal: No configured push destination.
-Either specify the URL from the command-line or configure a remote repository using
-
-    git remote add <name> <url>
-
-and then push using the remote name
-
-    git push <name>
-
 ➜  web-technology git:(c-sharp) git push repo01
 To github.com:lex0819/gb-git-ext.git
  ! [rejected]        c-sharp -> c-sharp (non-fast-forward)
@@ -258,7 +191,6 @@ ee2e479 terminal steps
 198cb04 Update README.md
 16f9d78 Initial commit
 c0fbd3c (c_sharp/master) first
-<<<<<<< HEAD
 web-technology git:(c-sharp) ✗
 ➜  web-technology git:(c-sharp) ✗ git add .
 ➜  web-technology git:(c-sharp) ✗ git commit -m'merge branch c-sharp to
@@ -554,8 +486,3 @@ ps'
 ...
 ➜  web-technology git:(main) ✗
 
-
-=======
-  web-technology git:(c-sharp) ✗
-  
->>>>>>> parent of 48f60ff (add file with terminal steps)
