@@ -55,3 +55,7 @@ PrintMatrix(secondMatrix);
 int[,] multiplyMatrix = Multiplication(firstMatrix, secondMatrix);
 Console.WriteLine("This is result of multiplication these matrixs");
 PrintMatrix(multiplyMatrix);
+
+/*
+вот такое решение
+*/
