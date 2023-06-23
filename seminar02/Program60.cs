@@ -35,7 +35,3 @@ void PrintMatrix3D(int[,,] matrix)
 }
 
 PrintMatrix3D(matrix);
-
-/*
-вот такое решение
-*/
