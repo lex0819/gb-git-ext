@@ -59,3 +59,7 @@ PrintMatrix(matrix);
 int[,] sortMatrix = SortMatrix(matrix);
 Console.WriteLine("See new sort matrix");
 PrintMatrix(sortMatrix);
+
+/*
+вот такое решение
+*/
