@@ -68,3 +68,7 @@ Console.WriteLine("We have the matrix");
 PrintMatrix(matrix);
 
 Console.WriteLine($"Number of a row of the matrix which has minimum summ of the items is {index}");
+
+/*
+вот такое решение
+*/
