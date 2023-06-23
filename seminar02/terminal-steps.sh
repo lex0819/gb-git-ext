@@ -18,16 +18,6 @@ drwxr-xr-x@ 11 lex  staff   352 Jun 17 18:14 web-technology
 ➜  web-technology git:(c-sharp) ✗ git commit -m'add c-sharp repo'
 [c-sharp 85cf40a] add c-sharp repo
  1 file changed, 6 insertions(+), 1 deletion(-)
-➜  web-technology git:(c-sharp) git push
-fatal: No configured push destination.
-Either specify the URL from the command-line or configure a remote repository using
-
-    git remote add <name> <url>
-
-and then push using the remote name
-
-    git push <name>
-
 ➜  web-technology git:(c-sharp) git remote -v
 c_sharp	git@github.com:lex0819/c_sharp_task_54_56_58_60_62.git (fetch)
 c_sharp	git@github.com:lex0819/c_sharp_task_54_56_58_60_62.git (push)
@@ -53,36 +43,6 @@ To github.com:lex0819/gb-git-ext.git
 Fetching repo01
 Fetching c_sharp
 ➜  web-technology git:(c-sharp)
-➜  web-technology git:(c-sharp) git pull
-There is no tracking information for the current branch.
-Please specify which branch you want to merge with.
-See git-pull(1) for details.
-
-    git pull <remote> <branch>
-
-If you wish to set tracking information for this branch you can do so with:
-
-    git branch --set-upstream-to=<remote>/<branch> c-sharp
-
-➜  web-technology git:(c-sharp)
-➜  web-technology git:(c-sharp) git branch --set-upstream-to=c-sharp/master c-sharp
-fatal: the requested upstream branch 'c-sharp/master' does not exist
-hint:
-hint: If you are planning on basing your work on an upstream
-hint: branch that already exists at the remote, you may need to
-hint: run "git fetch" to retrieve it.
-hint:
-hint: If you are planning to push out a new local branch that
-hint: will track its remote counterpart, you may want to use
-hint: "git push -u" to set the upstream config as you push.
-hint: Disable this message with "git config advice.setUpstreamFailure false"
-➜  web-technology git:(c-sharp)
-➜  web-technology git:(c-sharp) git pull rebase
-fatal: 'rebase' does not appear to be a git repository
-fatal: Could not read from remote repository.
-
-Please make sure you have the correct access rights
-and the repository exists.
 ➜  web-technology git:(c-sharp) git pull --rebase
 There is no tracking information for the current branch.
 Please specify which branch you want to rebase against.
@@ -94,12 +54,6 @@ If you wish to set tracking information for this branch you can do so with:
 
     git branch --set-upstream-to=<remote>/<branch> c-sharp
 
-➜  web-technology git:(c-sharp) git pull c-sharp master
-fatal: 'c-sharp' does not appear to be a git repository
-fatal: Could not read from remote repository.
-
-Please make sure you have the correct access rights
-and the repository exists.
 ➜  web-technology git:(c-sharp) git remote -v
 c_sharp	git@github.com:lex0819/c_sharp_task_54_56_58_60_62.git (fetch)
 c_sharp	git@github.com:lex0819/c_sharp_task_54_56_58_60_62.git (push)
@@ -121,17 +75,6 @@ hint: preference for all repositories. You can also pass --rebase, --no-rebase,
 hint: or --ff-only on the command line to override the configured default per
 hint: invocation.
 fatal: Need to specify how to reconcile divergent branches.
-➜  web-technology git:(c-sharp) git pull --rebase
-There is no tracking information for the current branch.
-Please specify which branch you want to rebase against.
-See git-pull(1) for details.
-
-    git pull <remote> <branch>
-
-If you wish to set tracking information for this branch you can do so with:
-
-    git branch --set-upstream-to=<remote>/<branch> c-sharp
-
 ➜  web-technology git:(c-sharp) git pull --rebase c_sharp master
 From github.com:lex0819/c_sharp_task_54_56_58_60_62
  * branch            master     -> FETCH_HEAD
@@ -201,16 +144,6 @@ no changes added to commit (use "git add" and/or "git commit -a")
  rename Program60.cs => seminar02/Program60.cs (100%)
  rename Program62.cs => seminar02/Program62.cs (100%)
 ➜  web-technology git:(c-sharp)
-➜  web-technology git:(c-sharp) git push
-fatal: No configured push destination.
-Either specify the URL from the command-line or configure a remote repository using
-
-    git remote add <name> <url>
-
-and then push using the remote name
-
-    git push <name>
-
 ➜  web-technology git:(c-sharp) git push repo01
 To github.com:lex0819/gb-git-ext.git
  ! [rejected]        c-sharp -> c-sharp (non-fast-forward)
@@ -258,5 +191,233 @@ ee2e479 terminal steps
 198cb04 Update README.md
 16f9d78 Initial commit
 c0fbd3c (c_sharp/master) first
-  web-technology git:(c-sharp) ✗
-  
+web-technology git:(c-sharp) ✗
+➜  web-technology git:(c-sharp) ✗ git add .
+➜  web-technology git:(c-sharp) ✗ git commit -m'merge branch c-sharp to
+repo01'
+[c-sharp 3b2e7db] merge branch c-sharp to repo01
+ 1 file changed, 262 insertions(+)
+ create mode 100644 seminar02/terminal-steps.sh
+➜  web-technology git:(c-sharp) git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+    git push <name>
+
+➜  web-technology git:(c-sharp) git push repo01
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 3.06 KiB | 3.06 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:lex0819/gb-git-ext.git
+   b345b1f..3b2e7db  c-sharp -> c-sharp
+➜  web-technology git:(c-sharp)
+➜  web-technology git:(c-sharp)
+➜  web-technology git:(c-sharp) git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'repo01/main'.
+➜  web-technology git:(main)
+➜  web-technology git:(main) git merge c-sharp
+fatal: refusing to merge unrelated histories
+➜  web-technology git:(main)
+➜  web-technology git:(main) git rebase repo01/main
+Current branch main is up to date.
+➜  web-technology git:(main)
+➜  web-technology git:(main) git branch
+  c-sharp
+* main
+➜  web-technology git:(main) ✗
+➜  web-technology git:(main) ✗ git pull --rebase repo01 c-sharp
+From github.com:lex0819/gb-git-ext
+ * branch            c-sharp    -> FETCH_HEAD
+warning: skipped previously applied commit 9fddd08
+warning: skipped previously applied commit a3c9299
+warning: skipped previously applied commit fe920af
+warning: skipped previously applied commit 96bc4bc
+hint: use --reapply-cherry-picks to include skipped commits
+hint: Disable this message with "git config advice.skippedCherryPicks false"
+error: The following untracked working tree files would be overwritten by checkout:
+	seminar02/terminal-steps.sh
+Please move or remove them before you switch branches.
+Aborting
+error: could not detach HEAD
+➜  web-technology git:(main) ✗
+➜  web-technology git:(main) ✗
+➜  web-technology git:(main) ✗ git pull repo01 main --allow-unrelated-histories
+From github.com:lex0819/gb-git-ext
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+➜  web-technology git:(main) ✗
+➜  web-technology git:(main) ✗
+➜  web-technology git:(main) ✗ git merge c-sharp
+fatal: refusing to merge unrelated histories
+➜  web-technology git:(main) ✗
+➜  web-technology git:(main) ✗
+➜  web-technology git:(main) ✗ git pull repo01 c-sharp --allow-unrelated-histories
+From github.com:lex0819/gb-git-ext
+ * branch            c-sharp    -> FETCH_HEAD
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint:
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint:
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+➜  web-technology git:(main) ✗
+➜  web-technology git:(main) ✗ git rebase c-sharp
+warning: skipped previously applied commit 9fddd08
+warning: skipped previously applied commit a3c9299
+warning: skipped previously applied commit fe920af
+warning: skipped previously applied commit 96bc4bc
+hint: use --reapply-cherry-picks to include skipped commits
+hint: Disable this message with "git config advice.skippedCherryPicks false"
+Successfully rebased and updated refs/heads/main.
+➜  web-technology git:(main) ✗
+➜  web-technology git:(main) ✗ git checkout c-sharp
+Switched to branch 'c-sharp'
+➜  web-technology git:(c-sharp) ✗
+➜  web-technology git:(c-sharp) ✗
+➜  web-technology git:(c-sharp) ✗ git checkout main
+Switched to branch 'main'
+Your branch and 'repo01/main' have diverged,
+and have 8 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+➜  web-technology git:(main) ✗
+➜  web-technology git:(main) ✗ git pull --rebase
+warning: skipped previously applied commit 16f9d78
+warning: skipped previously applied commit 198cb04
+warning: skipped previously applied commit 4dae847
+warning: skipped previously applied commit ee2e479
+hint: use --reapply-cherry-picks to include skipped commits
+hint: Disable this message with "git config advice.skippedCherryPicks false"
+Successfully rebased and updated refs/heads/main.
+➜  web-technology git:(main) ✗
+commit 3b2e7db5fd3869073eebc5180c8eec9292e1df03 (HEAD -> main, repo01/c-sharp, c-sharp)
+Author: lex0819 <lexmolnar@gmail.com>
+Date:   Fri Jun 23 10:44:13 2023 +0300
+
+    merge branch c-sharp to repo01
+
+commit b345b1fcc897fa3edd25cd22f3acc26c30295620
+Author: lex0819 <lexmolnar@gmail.com>
+Date:   Fri Jun 23 10:32:04 2023 +0300
+
+    add 2 folders
+
+commit fe64d17df5728edcbdeeb8c876816af08368b65e
+Author: lex0819 <lexmolnar@gmail.com>
+Date:   Fri Jun 23 10:18:22 2023 +0300
+
+    add c-sharp repo
+
+commit ee2e479a924133d038976d66617541a4aa706747
+Author: lex0819 <lexmolnar@gmail.com>
+Date:   Sat Jun 17 18:21:42 2023 +0300
+
+    terminal steps
+
+commit 4dae847884a19d3c61a27ff44ef0a5d86b30569b
+Author: lex0819 <lexmolnar@gmail.com>
+Date:   Sat Jun 17 18:00:05 2023 +0300
+commit 3b2e7db5fd3869073eebc5180c8eec9292e1df03 (HEAD -> main, repo01/c-
+sharp, c-sharp)
+Author: lex0819 <lexmolnar@gmail.com>
+Date:   Fri Jun 23 10:44:13 2023 +0300
+
+    merge branch c-sharp to repo01
+
+commit b345b1fcc897fa3edd25cd22f3acc26c30295620
+Author: lex0819 <lexmolnar@gmail.com>
+Date:   Fri Jun 23 10:32:04 2023 +0300
+
+    add 2 folders
+
+commit fe64d17df5728edcbdeeb8c876816af08368b65e
+Author: lex0819 <lexmolnar@gmail.com>
+Date:   Fri Jun 23 10:18:22 2023 +0300
+
+    add c-sharp repo
+
+commit ee2e479a924133d038976d66617541a4aa706747
+Author: lex0819 <lexmolnar@gmail.com>
+Date:   Sat Jun 17 18:21:42 2023 +0300
+
+    terminal steps
+
+commit 4dae847884a19d3c61a27ff44ef0a5d86b30569b
+Author: lex0819 <lexmolnar@gmail.com>
+Date:   Sat Jun 17 18:00:05 2023 +0300
+➜  web-technology git:(main) ✗
+➜  web-technology git:(main) ✗
+➜  web-technology git:(main) ✗ git rebase c-sharp
+warning: skipped previously applied commit 9fddd08
+warning: skipped previously applied commit a3c9299
+warning: skipped previously applied commit fe920af
+warning: skipped previously applied commit 96bc4bc
+warning: skipped previously applied commit 5f44ffe
+warning: skipped previously applied commit b81875f
+warning: skipped previously applied commit 2e33a93
+warning: skipped previously applied commit 0c13b24
+hint: use --reapply-cherry-picks to include skipped commits
+hint: Disable this message with "git config advice.skippedCherryPicks false"
+Successfully rebased and updated refs/heads/main.
+➜  web-technology git:(main) ✗
+➜  web-technology git:(main) ✗
+➜  web-technology git:(main) ✗ git status
+On branch main
+Your branch and 'repo01/main' have diverged,
+and have 8 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  web-technology git:(main) ✗ git add .
+➜  web-technology git:(main) ✗ git commit -m'remove .DS_Store'
+[main 638b556] remove .DS_Store
+ 1 file changed, 1 insertion(+)
+➜  web-technology git:(main)
+➜  web-technology git:(main) git push
+To github.com:lex0819/gb-git-ext.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'github.com:lex0819/gb-git-ext.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+➜  web-technology git:(main)
+➜  web-technology git:(main) git push -ff
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 384 bytes | 384.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:lex0819/gb-git-ext.git
+ + 96bc4bc...638b556 main -> main (forced update)
+➜  web-technology git:(main)
+➜  web-technology git:(main) git status
+On branch main
+Your branch is up to date with 'repo01/main'.
+
+nothing to commit, working tree clean
+➜  web-technology git:(main)
+➜  web-technology git:(main) git branch
+➜  web-technology git:(main)
+➜  web-technology git:(main)
+
