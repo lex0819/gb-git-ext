@@ -420,4 +420,70 @@ nothing to commit, working tree clean
 ➜  web-technology git:(main) git branch
 ➜  web-technology git:(main)
 ➜  web-technology git:(main)
+➜  web-technology git:(main) git status
+On branch main
+Your branch is up to date with 'repo01/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   seminar02/terminal-steps.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  web-technology git:(main) ✗
+➜  web-technology git:(main) ✗ git add .
+➜  web-technology git:(main) ✗ git commit -m'add file with terminal steps'
+[main 48f60ff] add file with terminal steps
+ 1 file changed, 230 insertions(+), 69 deletions(-)
+➜  web-technology git:(main) git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 2.00 KiB | 2.00 MiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To github.com:lex0819/gb-git-ext.git
+   638b556..48f60ff  main -> main
+➜  web-technology git:(main)
+➜  web-technology git:(main)
+➜  web-technology git:(main) ✗ git log --oneline
+48f60ff (HEAD -> main, repo01/main) add file with terminal steps
+638b556 remove .DS_Store
+3b2e7db (repo01/c-sharp, c-sharp) merge branch c-sharp to repo01
+b345b1f add 2 folders
+fe64d17 add c-sharp repo
+ee2e479 terminal steps
+4dae847 first
+198cb04 Update README.md
+16f9d78 Initial commit
+c0fbd3c (c_sharp/master) first
+END
+➜  web-technology git:(main) ✗
+➜  web-technology git:(main) ✗ git diff 48f60ff
+diff --git a/seminar02/terminal-steps.sh b/seminar02/terminal-steps.sh
+index 0764ba7..f02b917 100644
+--- a/seminar02/terminal-steps.sh
++++ b/seminar02/terminal-steps.sh
+@@ -420,4 +420,44 @@ nothing to commit, working tree clean
+ ➜  web-technology git:(main) git branch
+ ➜  web-technology git:(main)
+ ➜  web-technology git:(main)
++➜  web-technology git:(main) git status
++On branch main
++Your branch is up to date with 'repo01/main'.
++
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git restore <file>..." to discard changes in working directory)
++       modified:   seminar02/terminal-steps.sh
++
++no changes added to commit (use "git add" and/or "git commit -a")
++➜  web-technology git:(main) ✗
++➜  web-technology git:(main) ✗ git add .
++➜  web-technology git:(main) ✗ git commit -m'add file with terminal ste
+ps'
+...
+➜  web-technology git:(main) ✗
+
 
